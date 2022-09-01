@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  padding: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 50%;
+
+  min-width: 40vw;
+  height: 40vw;
+
+  font-size: 4em;
+  line-height: 30vw;
+  border: 10px solid #0000;
+  border-radius: 30px;
+
+  overflow: hidden;
+}
+
+@keyframes vencedor-motion {
+  0%{background-color: #fff; color: #000; border-color: #0000;}
+  100%{background-color: #37af00; color: #fff; border-color: #133b00;}
+}
+
+.vencedor{
+  background-color: #37af00;
+  color: #fff;
+  border: 10px solid #133b00;
+
+  animation: vencedor-motion 3s linear normal;
+}
+
+@keyframes bg-green-motion {
+  0%{background-color: #fff;}
+  100%{background-color: #a1ff75;}
+}
+
+.bg-green{
+  background-color: #a1ff75;
+  animation: bg-green-motion 3s linear normal;
+}
+
+div {
+  margin: 80px auto;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 5px;
+
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  border-style: solid;
+  border-radius: 10px;
+}
+
+[type="number"]{
+  text-align: left;
+}
+[type="submit"]{
+  transition: .2s;
+}
+[type="submit"]:hover{
+  background-color: #aaa;
+  cursor: pointer;
+  transition: .2s;
+}
